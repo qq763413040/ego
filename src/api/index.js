@@ -44,5 +44,17 @@ export default {
     // 修改商品
     updateTbItem(params) {
         return get(base.updateTbItem, params)
+    },
+    // 参数页面  参数列表
+    selectItemParamAll(params) {
+        return get(base.selectItemParamAll, params)
+    },
+    // 规格参数 添加 [itemCatId, content,specsName]
+    insertItemParam(params) {
+        return get(base.insertItemParam, params)
+    },
+    // 规格参数删除
+    delete(params) {
+        return get(base.delete, params)
     }
 }

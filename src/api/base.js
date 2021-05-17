@@ -9,5 +9,8 @@ export default {
     insertTbItem: '/api/api//backend/item/insertTbItem',//添加商品
     deleteItemById: '/api/api/backend/item/deleteItemById',//删除
     batchDelete: '/api/api/batchDelete',//批量删除  idArr
-    updateTbItem:'/api/api/backend/item/updateTbItem',//修改商品
+    updateTbItem: '/api/api/backend/item/updateTbItem',//修改商品
+    selectItemParamAll: '/api/api/backend/itemParam/selectItemParamAll',//参数页面  参数列表
+    insertItemParam: "/api/api/backend/itemParam/insertItemParam",//规格参数 添加 [itemCatId, content,specsName]
+    delete: '/api/api/params/delete',//删除规格参数
 }

@@ -51,7 +51,7 @@ export default {
     },
   },
   mounted() {
-    console.log(this.$i18n);
+    // console.log(this.$i18n);
   },
 };
 </script>

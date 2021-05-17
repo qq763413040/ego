@@ -398,7 +398,7 @@ router.get("/batchDelete", (req, res) => {
     const sqlLen = "select * from params where id";
     sqlFn(sqlLen, null, data => {
         let len = data.length;
-        const sql = "select * from params order by id desc limit 8 offset " + (page - 1) * 10;
+        const sql = "select * from params order by id desc limit 8 offset " + (page - 1) * 8;
         sqlFn(sql, null, result => {
             if (result.length > 0) {
                 res.send({
